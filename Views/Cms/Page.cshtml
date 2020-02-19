@@ -5,13 +5,20 @@
 }
 
 <div class="main">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-10 page-body">
-                <h1>@Model.Title</h1>
+    <header class="page-header">       
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">@Model.Title</h1>
+        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      </div>
+    </div>
+    </div>
+</header>
 
+        <div class="row">
+            <div class="col-sm-10 page-body">            
                 @Html.DisplayFor(m => m.Blocks)
-            </div>
-        </div>
+            </div>        
     </div>
 </div>

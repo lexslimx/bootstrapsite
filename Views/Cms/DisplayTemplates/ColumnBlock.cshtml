@@ -3,8 +3,12 @@
 <div class="row">
     @for (var n = 0; n < Model.Items.Count; n++)
     {
-        <div class="col-md">
-            @Html.DisplayFor(m => Model.Items[n], Model.Items[n].GetType().Name)
+        <div class="bg-dark col-md pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">@Html.DisplayFor(m => Model.Items[n], Model.Items[n].GetType().Name)</p>
+            </div>
+            <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
         </div>
     }
 </div>

@@ -10,6 +10,10 @@ namespace bootstrapsite.Models
     [PageTypeRoute(Title = "Default", Route = "/start")]
     public class StartPage : Page<StartPage>
     {
+        public StartPage()
+        {
+            Hero.PrimaryImage = "";
+        }
         /// <summary>
         /// Gets/sets the page hero.
         /// </summary>

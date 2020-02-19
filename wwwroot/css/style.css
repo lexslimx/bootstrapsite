@@ -54,7 +54,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 header {
-  color: #fff; }
+  color: #000; }
   header.site-header {
     padding: 0;
     position: absolute;
@@ -62,7 +62,8 @@ header {
     left: 0;
     width: 100%; }
   header.page-header {
-    padding-top: 6rem; }
+    padding-top: 0rem; 
+    color: #000;}
     header.page-header img {
       border-radius: 80px;
       float: right; }
